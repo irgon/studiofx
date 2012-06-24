@@ -1,0 +1,389 @@
+/*
+Theme Name: StudioFX
+Theme URI: http://studiofx.pl/
+Author: Igor Rzegocki
+Author URI: http://rzegocki.pl/
+Description: Theme for "StudioFX"
+Version: 1.0
+Tags: private
+*/
+/* 1. BASE
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+
+/* 1.1 Reset
+------------------------------------------------------------------------------*/
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+a, ins, del { text-decoration: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+th, td { vertical-align: top; }
+th { text-align: left; }
+
+
+/* 1.1.2 HTML5 Elements
+------------------------------------------------------------------------------*/
+
+article, aside, figure, footer, header, hgroup, nav, section { display: block; }
+
+
+/* 1.2 Accessibility Navigation & Hide
+------------------------------------------------------------------------------*/
+
+#accessibility-nav, .hide { position: absolute; top: -999em; left: -999em; height: 1px; width: 1px; }
+
+
+/* 1.3 Clearfix
+------------------------------------------------------------------------------*/
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+
+/* 1.4 Default Styles
+------------------------------------------------------------------------------*/
+
+body { background: #000; color: #999; font: normal normal 12px/16px Arial, Helvetica, sans-serif; cursor: default; overflow-y: scroll; overflow-x: hidden; position: relative; }
+hr { display: none; }
+strong { font-weight: bold; }
+em { font-style: normal; }
+del { text-decoration: line-through; }
+th { font-weight: normal; }
+address, cite, dfn { font-style: normal; }
+li { list-style: none; }
+abbr, acronym { border-bottom: 1px dotted #999; cursor: help; }
+input, textarea, select { font-family: Arial, Helvetica, sans-serif; }
+a, a:visited { color: #ffcc00; text-decoration: underline; }
+a:hover, a:active { color: #ffcc00; text-decoration: none; }
+.hide { display: none; }
+html, body {
+    height: 100%;
+}
+
+/* 1.5 Fonts
+------------------------------------------------------------------------------*/
+
+
+/* 1.6 Buttons
+------------------------------------------------------------------------------*/
+.button {
+    background: #45494d;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDk0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #45494d 0%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45494d), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(top,  #45494d 0%,#000000 100%);
+    background: -o-linear-gradient(top,  #45494d 0%,#000000 100%);
+    background: -ms-linear-gradient(top,  #45494d 0%,#000000 100%);
+    background: linear-gradient(top,  #45494d 0%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45494d', endColorstr='#000000',GradientType=0 );
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    width: 249px;
+    height: 41px;
+    display: block;
+    text-decoration: none;
+}
+
+.button span {
+    display: block;
+    width: 197px;
+    height: 41px;
+    padding: 0 26px;
+    line-height: 41px;
+    color: #fff;
+    background: url(../images/button-arrow.png) no-repeat;
+    background-position: right center;
+}
+
+:root .button { filter:none \0/IE9; }
+
+/* 2 Page
+------------------------------------------------------------------------------*/
+#wrapper {
+    width: 1100px;
+    overflow: hidden;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto; /*-92px; */
+}
+
+/* 2.1 Top
+------------------------------------------------------------------------------*/
+#top {
+    margin: 20px 0 35px;
+    overflow: hidden;
+}
+
+#top h1,
+#top h2 {
+    float: left;
+    text-indent: -1000em;
+    overflow: hidden;
+}
+
+#top h1 {
+    width: 177px;
+    height: 131px;
+    background: url(../images/logo.png) no-repeat;
+    margin: 0 0 0 -7px;
+}
+
+#top h2 {
+    width: 564px;
+    height: 47px;
+    background: url(../images/tagline.png) no-repeat;
+    margin: 38px 0 0 0;
+    float: none;
+    position: relative;
+    left: 44px;
+}
+
+#top div.address {
+    float: right;
+    color: #fff;
+    font-size: 11px;
+    fton-family: Tahoma, Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin: 16px -3px 0 0;
+    line-height: 13px;
+}
+
+#top div.address em {
+    color: #ff6800;
+    font-weight: bold;
+}
+
+#top div.address span {
+    color: #636161;
+}
+
+#top div.address span em {
+    color: #9d9d9d;
+}
+
+#top div.address a {
+    display: block;
+    margin: 6px 0 0;
+}
+
+#top div.address address {
+    padding: 0 15px;
+    float: left;
+}
+
+#top div.address address:first-child {
+    border-right: solid 1px #333;
+    text-align: right;
+}
+
+#top ul.menu {
+    margin: 15px 0 0;
+    display: block;
+    position: relative;
+    left: 21px;
+    overflow: hidden;
+}
+
+#top ul.menu li {
+    margin: 0 1px 0 0;
+    display: block;
+    float: left;
+}
+
+#top ul.menu li a {
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    background: #3e3e3e;
+    color: #b6b1b1;
+    font-size: 11px;
+    text-decoration: none;
+    padding: 0 9px 0 12px;
+}
+
+#top ul.menu li.selected a {
+    background: #292929;
+    color: #fefefe;
+}
+
+#top ul.menu li a:hover {
+    text-decoration: underline;
+}
+
+#top ul.menu li.youtube {
+    padding: 0 70px 0 0;
+    background: url(../images/youtube.png) no-repeat;
+    background-position: right center;
+}
+
+/* 2.2 Content
+------------------------------------------------------------------------------*/
+#content {
+    height: 297px;
+    margin: 0 0 33px;
+}
+
+#content {
+    margin: 0 0 33px;
+}
+
+#content.page-content {
+	width: 1028px;
+	margin: 0 auto 33px;
+	overflow: hidden;
+	padding: 0 36px;
+	background: url(images/fxbg.png) no-repeat;
+	background-position: right bottom;
+}
+
+#content .splashpageslist {
+	display: block;
+	width: 1058px;
+	background: #000;
+	padding: 0 21px;
+	overflow: hidden;
+	*clear: both;
+}
+
+#content .splashpageslist li {
+	float: left;
+	margin: 0 0 0 19px;
+	width: 250px;
+	height: 297px;
+}
+
+
+#content .splashpageslist li:first-child {
+	margin: 0;
+}
+
+#content .splashpageslist li a {
+	display: block;
+	display: block;
+	position: relative;
+	background-color: #000;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 284px;
+	padding: 12px 0 1px;
+	text-decoration: none;
+
+}
+
+#content .splashpageslist li a:hover {
+	background: #ff6800;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-radius-topleft: 3px;
+	border-radius-topright: 3px;
+}
+
+#content .splashpageslist li a img {
+	width: 250px;
+	height: 280px;
+	border-top: solid 2px #000;
+	border-bottom: solid 2px #000;
+}
+
+#content .splashpageslist li a span {
+	height: 50px;
+	width: 206px;
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	bottom: 3px;
+	padding: 19px 22px 0;
+	color: #999;
+	left: 0;
+	z-index: 10;
+}
+
+#content .splashpageslist li a span strong {
+	display: block;
+	color: #fff;
+}
+
+.oldie #content .splashpageslist li a span {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)"; /* IE8 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);   /* IE6 & 7 */
+	zoom: 1;
+}
+
+/* 2.3 Sidebar
+------------------------------------------------------------------------------*/
+#sidebar {
+    padding: 12px 0 12px 51px;
+    margin: 0 0 0 21px;
+    background: url(../images/sidebar-left.png) no-repeat;
+    background-position: left center;
+}
+
+#sidebar .button {
+    float: right;
+    margin: 3px 23px 0 0;
+}
+
+#sidebar p {
+    padding: 0 48px 0 0;
+    overflow: hidden;
+}
+
+/* 2.4 Footer
+------------------------------------------------------------------------------*/
+#push {
+/*    height: 92px; */
+}
+
+#footer {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    padding: 47px 0 29px;
+    height: 16px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#footer a.lang {
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 23px 0 0;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#footer a.lang-en {
+    background-image: url(../images/en.png);
+}
+
+#footer a.lang-pl {
+    background-image: url(../images/pl.png);
+}
+
+#footer address {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+#footer em {
+    float: right;
+    color: #3b3b3b;
+}
+
+#footer em a {
+    color: #5e5e5e;
+    text-decoration: none;
+}
+
+#footer em a:hover {
+    text-decoration: underline;
+}
